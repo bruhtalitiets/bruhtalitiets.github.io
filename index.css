@@ -1,0 +1,191 @@
+
+
+body {
+    background-image: url('/thumbnails/pokemon-background-image.jpg'); /* Add your image path */
+    background-size: cover;  /* Make sure the background covers the whole page */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    background-attachment: fixed;  /* Keep the background fixed on scroll */
+}
+
+
+
+html, body {
+  margin: 0; /* Remove default margin */
+  height: 100%; /* Make the body take full height */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+
+
+
+button{
+  height: 75px;
+  width: 300px;
+  font-size: 25px ;
+  cursor: pointer;
+}
+
+/* only the front side of the card*/
+.front-side-card{
+  height: 192px;
+  width: 138px;
+  padding-left: 15px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  
+}
+
+/* css for all cards*/
+
+.all-cards{
+  height: 192px;
+  width: 138px;
+
+  padding-left: 15px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+ 
+}
+
+.img-container, .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50vh;
+
+}
+
+.spaced-footer {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spaced-footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaced-footer footer img{
+  margin-right: 10px;
+}
+
+/* only the back side of the card*/
+.back-side-card{
+
+}
+
+.show {
+  pointer-events: none;
+  transform: rotateY(180deg);
+}
+
+button {
+  font-family: 'Press Start 2P', cursive; 
+  line-height: 60px;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  padding: 0 40px;
+  background: #ffcb05;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+  background: #003060;
+  color: white;
+  position: relative;
+  top: 10px;
+  box-shadow: none;
+}
+
+p{
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 50px;
+  padding-bottom: -20[x];
+}
+
+.score{
+  
+}
+
+.container{
+  height: 200px;
+}
+
+.ash-ketchum{
+  height: 200px;
+  width: 200px;
+}
+
+p{
+  font-size: 20px;
+ 
+}
+
+footer{
+  font-family: 'Press Start 2P', cursive; 
+  padding-top: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .all-cards {
+    height: 50%;
+    width: 20%;
+  
+    padding-left: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+   
+  }
+
+  .spaced-footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .spaced-footer .copyright {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .all-cards {
+    height: 80%;
+    width: 20%;
+  
+    /* padding-left: 15px; */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+   
+  }
+
+  .spaced-footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+  }
+
+  .container {
+    margin-top: 250px;
+  }
+
+  .spaced-footer .copyright {
+    display: none;
+  }
+}

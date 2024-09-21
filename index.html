@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon card memory game</title>
+
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+  @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+  </style>
+
+</head>
+<body>
+  
+<button class="toggle-music">
+  Music
+</button>
+
+<p>MISMATCH = -10 POINTS</p>
+<P class="score"> SCORE: 100 POINTS </P>
+
+ <audio class="background-music" src="audio/Dialga's fight to the finish  PMD2 OST Restoration.mp3" autoplay loop>
+ </audio>
+ <audio class="new-game-sound" src="audio/gameboy-start-sound.m4a" preload="auto"></audio>
+ <audio class="pikachu-win-sound" src="audio/Pikachu-win-sound.mp3" preload="auto"></audio>
+ <audio class="pikachu-lose-sound" src="audio/Pickachu-defeat-sound.mp3" preload="auto"></audio>
+ <audio class="hover-menu-sound" src="audio/Hover-menu-sound.mp3" preload="auto"></audio>
+
+
+  <div class="img-container container" > <img class="ash-ketchum" src="thumbnails/Ash.gif" alt=""></div>
+
+  <div class="container">   
+  
+    <button class="new-game hover-button"> New Game </button>
+  </div>
+
+  <div class="spaced-footer">
+     <footer> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/770px-Pok%C3%A9_Ball_icon.svg.png" alt="" width="35"> Made by Sofyan F.</footer> <footer class="copyright">© copyright - 2024</footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
