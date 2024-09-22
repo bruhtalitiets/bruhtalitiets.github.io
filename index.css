@@ -108,7 +108,7 @@ button:hover {
 }
 
 p{
-  font-family: 'Pokemon Solid', sans-serif;
+  font-family: 'Press Start 2P', cursive; 
   font-size: 50px;
   padding-bottom: -20[x];
 }
@@ -133,7 +133,7 @@ p{
 
 footer{
   font-family: 'Press Start 2P', cursive; 
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 @media only screen and (max-width: 800px) {
