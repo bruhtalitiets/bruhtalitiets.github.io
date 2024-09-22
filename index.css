@@ -189,3 +189,73 @@ footer{
     display: none;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Adjust card sizes for iPad landscape */
+  .all-cards {
+    height: 150px;
+    width: 110px;
+    margin: 10px;
+    padding-left: 0;
+  }
+
+  .img-container, .container {
+    height: auto; /* Adjust container height to auto to fit content */
+  }
+
+  /* Adjust the Ash Ketchum image */
+  .ash-ketchum {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Footer adjustments for iPad landscape */
+  .spaced-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .spaced-footer footer {
+    font-size: 12px;
+  }
+
+  .spaced-footer .copyright {
+    display: block;
+  }
+
+  /* Adjust button size for iPad landscape */
+  button {
+    height: 60px;
+    width: 250px;
+    font-size: 18px;
+  }
+
+  /* Reduce padding for overall page */
+  html, body {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  /* Specific adjustments to the background */
+  body {
+    background-size: cover; /* Make sure the background covers the whole page */
+    background-position: center;
+    background-attachment: scroll; /* Allow scrolling for landscape mode */
+  }
+
+  /* Make sure the container adapts well to landscape */
+  .container {
+    margin-top: 50px;
+    height: auto;
+  }
+}
